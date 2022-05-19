@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-content{
+    min-height: 1000px;
+    margin: 20px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    background-color: #242531;
+    grid-column: span 1;
+    padding: 20px;
+    color: white;
+}
+.profile-image{
+    padding: 1rem;
+}
+.profile-image img{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+font-size: 0.75rem;
+text-align: center;
+padding: 1rem;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.personal-details{
+    list-style: none;
+    margin: 10px 0;
+}
+.personal-details .icon{
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.personal-details-icon{
+    margin-left: 10px;
+}
+.icon{
+    /* text-align: center; */
+    padding: 0 10px;
+    font-size: 1.2rem;
+    
+}
+.icon a{
+    text-decoration: none;
+    color: white;
+}
+/* skills session */
+
+.skill-title{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.skill-item{
+    padding-bottom: 10px;
+}
+.progress-bar{
+    height: 4px;
+    /* padding-bottom: 10px; */
+    background-color: white;
+    border: 1px solid white;
+    
+}
+.right-section{
+    background-color: rgb(208, 226, 243);
+    grid-column: span 1 / span 2;
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.para{
+    padding: 0.5rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.education-content{
+    display: flex;
+    padding: 0.5rem;
+}
+.edu-head{
+    font-size: 1.2rem;
+}
+.time .college{
+    font-size: 0.85rem;
+}
+.time .year{
+    font-size: 0.65rem;
+    padding-top: 10px;
+}
+.edu-para{
+    padding-right: 20px;
+    padding-top: 10px;
+}
+@media screen and (max-width:673px){
+.main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
